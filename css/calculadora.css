@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: #2C2A2A;
+    color:white;
+    font-family: 'Russo One', sans-serif;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    width: 500px;
+    height: 451px;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    background: #4A4747;
+    border-radius: 0px 50px;
+    padding: 5px 100px;
+}
+
+.cabecalho17{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: #2e01aa;
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+}
+
+.logo1{
+    height: 100px;
+}
+
+.titulo{
+    position: absolute;
+    left: 32%;
+    top: 20%;
+    font-size: 50px;
+}
+
+.sex{
+    font-size: 40px;
+}
+
+#sexo{
+    height: 30px;
+    width: 200px;
+    position: absolute;
+    left: 43%;
+    top: 12%;
+    
+}
+
+#palavra{
+    position: absolute;
+    left: 75px;
+    top: 10%;
+}
+
+.palavra1{
+    position: absolute;
+    left: 75px;
+    top: 28%;
+    font-size: 40px;
+}
+
+#peso{
+    height: 30px;
+    width: 200px;
+    position: absolute;
+    left: 43%;
+    top: 30%;
+}
+
+.palavra2{
+    position: absolute;
+    left: 75px;
+    top: 44%;
+    font-size: 40px;
+}
+
+#idade{
+    height: 30px;
+    width: 200px;
+    position: absolute;
+    left: 43%;
+    top: 46%;
+}
+
+.palavra3{
+    position: absolute;
+    left: 9px;
+    top: 60%;
+    font-size: 40px;
+}
+
+#altura{
+    height: 30px;
+    width: 135px;
+    position: absolute;
+    left: 56%;
+    top: 62%;
+}
+
+.botao-calcular{
+    position: absolute;
+    top: 76%;
+    left: 33%;
+    background-color: #5e2ee4;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 36px;
+    color: #fff;
+    height: 80px;
+    width: 180px;
+}
+
+.botao-calcular:hover{
+    background-color: mediumpurple;
+    cursor: pointer;
+}

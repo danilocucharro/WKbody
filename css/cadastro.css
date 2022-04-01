@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.logo-cadastro{
+    height: 100px;
+}
+
+.cabecalho10{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: #2e01aa;
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+}
+
+body{
+    font-size: 100%;
+    background: #2C2A2A;
+    font-family: 'Russo One', sans-serif;
+    color:white;
+}
+
+.menuzin{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    width: 817px;
+    height: 730px;
+    left: 50%;
+    top: 56%;
+    transform: translate(-50%,-50%);
+    background: #4A4747;
+    border-radius: 0px 50px;
+    padding: 5px 100px;
+}
+
+.botaozin{
+    background-color: #5e2ee4;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+    padding: none;
+    font-size: 40px;
+    width: 190px;
+    position:absolute;
+    left: 36%;
+    top: 89%;
+}
+
+.botaozin:hover{
+    background-color: mediumpurple;
+    cursor: pointer;
+}
+
+.name{
+    position: absolute;
+    top: 14%;
+    left: 30%;
+    font-size: 34px;
+}
+
+.nome6{
+    position: absolute;
+    top: 115%;
+    font-size: 25px;
+}
+
+.sobre{
+    position: absolute;
+    top: 26%;
+    left: 30%;
+    font-size: 34px;
+}
+
+.sobrenome6{
+    position: absolute;
+    top: 115%;
+    font-size: 25px;
+}
+
+.nasc{
+    position: absolute;
+    top: 38%;
+    left: 30%;
+    font-size: 34px;
+}
+
+.data{
+    position: absolute;
+    top: 115%;
+    font-size: 25px;
+}
+
+.mail{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size: 34px;
+}
+
+.email4{
+    position: absolute;
+    top: 115%;
+    font-size: 25px;
+}
+
+.password{
+    position: absolute;
+    top: 62%;
+    left: 30%;
+    font-size: 34px;
+}
+
+.senha3{
+    position: absolute;
+    top: 115%;
+    font-size: 25px;
+}
+
+.user{
+    position: absolute;
+    top: 74%;
+    left: 30%;
+    font-size: 34px;
+}
+
+.usuario1{
+    position: absolute;
+    top: 115%;
+    font-size: 25px;
+}
+
+.voltar{
+    position:absolute;
+    top: 30px;
+    left: 6%;
+    font-size: 27px;
+}
+
+.titulo{
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    font-size: 27px;
+}

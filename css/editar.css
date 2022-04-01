@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: #2C2A2A;
+    font-family: 'Russo One', sans-serif;
+    color:white;
+    padding-bottom: 34px;
+}
+
+
+.logo-login2{
+    height: 100px;
+}
+
+.cabecalho13{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: #2e01aa;
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+}
+
+.titulo{
+    position:absolute;
+    left: 43%;
+    font-size: 60px;
+}
+
+.foto-usuario{
+    position: absolute;
+    height: 220px;
+    top: 20%;
+    left: 44%;
+}
+
+.usuario{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    font-size: 34px;
+}
+
+.user{
+    position: absolute;
+    left: 43%;
+    top: 50%;
+    font-size: 34px;
+}
+
+.idade{
+    position: absolute;
+    left: 30%;
+    top: 60%;
+    font-size: 34px;
+}
+
+.age{
+    position: absolute;
+    left: 43%;
+    top: 60%;
+    font-size: 34px;
+}
+
+.nome{
+    position: absolute;
+    left: 30%;
+    top: 70%;
+    font-size: 34px;
+}
+
+.name{
+    position: absolute;
+    left: 43%;
+    top: 70%;
+    font-size: 34px;
+}
+
+.email{
+    position: absolute;
+    left: 30%;
+    top: 80%;
+    font-size: 34px;
+}
+
+.mail{
+    position: absolute;
+    left: 43%;
+    top: 80%;
+    font-size: 34px;
+}
+
+.senha{
+    position: absolute;
+    left: 30%;
+    top: 90%;
+    font-size: 34px;
+}
+
+.pass{
+    position: absolute;
+    left: 43%;
+    top: 90%;
+    font-size: 34px;
+}
+
+.botaofoto{
+    background-color: #5e2ee4;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 57%;
+    top: 40%;
+    height: 60px;
+    width: 210px;
+    padding: none;
+    font-size: 24px;
+}
+
+.botao1{
+    background-color: #5e2ee4;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 69%;
+    top: 49%;
+    height: 60px;
+    width: 150px;
+    padding: none;
+    font-size: 24px;
+}
+
+.botao2{
+    background-color: #5e2ee4;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 69%;
+    top: 59%;
+    height: 60px;
+    width: 150px;
+    padding: none;
+    font-size: 24px;
+}
+
+.botao3{
+    background-color: #5e2ee4;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 69%;
+    top: 69%;
+    height: 60px;
+    width: 150px;
+    padding: none;
+    font-size: 24px;
+}
+
+.botao4{
+    background-color: #5e2ee4;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 69%;
+    top: 79%;
+    height: 60px;
+    width: 150px;
+    padding: none;
+    font-size: 24px;
+}
+
+.botao5{
+    background-color: #5e2ee4;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 69%;
+    top: 89%;
+    height: 60px;
+    width: 150px;
+    padding: none;
+    font-size: 24px;
+}
+
+.botaofoto:hover{
+    background-color: #2e01aa;
+    cursor: pointer;
+}
+.botao1:hover{
+    background-color: #2e01aa;
+    cursor: pointer;
+}
+.botao2:hover{
+    background-color: #2e01aa;
+    cursor: pointer;
+}
+.botao3:hover{
+    background-color: #2e01aa;
+    cursor: pointer;
+}
+.botao4:hover{
+    background-color: #2e01aa;
+    cursor: pointer;
+}
+.botao5:hover{
+    background-color: #2e01aa;
+    cursor: pointer;
+}
+
+.voltar{
+    position:absolute;
+    top: 30px;
+    left: 6%;
+    font-size: 27px;
+    color:white;
+}

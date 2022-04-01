@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: #2C2A2A;
+    font-family: 'Russo One', sans-serif;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color:#2e01aa;
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+}
+
+.cabecalho-logo{
+    height: 100px;
+}
+
+.menu{
+    display: flex;
+    gap: 100px;
+}
+
+.menu-item{
+    color:white;
+}
+
+.conteudo{
+    color:white;
+}
+
+.conteudo1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    justify-content: space-between;
+    font-size: 50px;
+}
+
+.conteudo2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    justify-content: space-between;
+    font-size: 50px;
+}
+
+.conteudo3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: none;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    justify-content: space-between;
+    font-size: 70px;
+    position: absolute;
+    left: 16%;
+    top: 100%;
+}
+
+.menu-item:hover{
+    color: mediumpurple;
+}
+
+.escrita{
+    padding-left: 20px;
+    position: absolute;
+    left: 53%;
+    top: 75%;
+    width: 50%;
+    font-size: 60px;
+    
+}
+
+.paragrafo1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    height: 240px;
+    width: 1070px;
+    left: 35%;
+    top: 27%;
+    background: #4A4747;
+    border-radius: 0px 50px;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.paragrafo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    height: 240px;
+    width: 800px;
+    left: 2%;
+    top: 70%;
+    background: #4A4747;
+    border-radius: 0px 50px;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.paragrafo3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    height: 240px;
+    width: 1070px;
+    left: 1650%;
+    right: 80%;
+    top: 538%;
+    background: #4A4747;
+    border-radius: 0px 50px;
+    padding: 10px;
+    padding-bottom: 0px;
+    font-size: 24px;
+}
+
+.mensagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    left: -700%;
+    top: 650%;
+}
+
+.conteudo-escrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    top: 31%;
+    left: 13%;
+    font-size: 70px;
+    width: 10%;
+}
+
+.botão{
+    background-color: #5e2ee4;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 33%;
+    top: 90%;
+    height: 50px;
+    width: 210px;
+    padding: none;
+    font-size: 40px;
+}
+
+.botão:hover{
+    background-color: mediumpurple;
+    cursor: pointer;
+}
