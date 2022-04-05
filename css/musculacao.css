@@ -74,6 +74,7 @@ body{
     position: absolute;
     left: 12%;
     top: 37%;
+    border-radius: 0px 50px;
 }
 
 .img2{
@@ -161,11 +162,11 @@ h1{
     left: 14%;
     top: 58%;
     font-size: 25px;
-    color:white;
+    color:rgb(0, 0, 0);
 }
 
 .selec1:hover{
-    color:#2e01aa;
+    color:#ff00ea;
     cursor:pointer;
 }
 

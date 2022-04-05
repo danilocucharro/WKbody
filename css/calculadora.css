@@ -132,3 +132,11 @@ body{
     background-color: mediumpurple;
     cursor: pointer;
 }
+
+.voltar{
+    position:absolute;
+    top: 30px;
+    left: 6%;
+    font-size: 27px;
+    color:white;
+}
