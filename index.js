@@ -1,16 +1,61 @@
 const express = require('express');
 const app = express();
-const path = require('path');
-const router = express.Router();
+const handlebars = require('express-handlebars')
+const bodyParser = require('body-parser')
+const CadastroUsuario = require('./models/CadastroUsuario')
+const path = require("path")
 
-router.get('/',function(req,res){
+var handle = handlebars.create({defaultLayout: 'main'});
 
-    res.sendFile(path.join(__dirname+'/index.html'));
+// Public
+    app.use(express.static(path.join(__dirname, "public")))
 
+// Config
+    // Template engine
+        app.engine('handlebars', handle.engine);
+        app.set('view engine', 'handlebars');
+    // Body Parser
+        app.use(express.urlencoded({extended: false}))
+        app.use(express.json())
+
+// Rotas
+app.get('/editarPerfil', function(req, res){
+    res.render('editarPerfil')/*
+    CadastroUsuario.findOne({where: {'id': req.params.id}}).then(function(){
+        res.send(req.body.nome)
+    }).catch(function(erro){
+        res.send("algo de errado")
+    })*/
+}),
+    
+
+
+app.get("/",function(req,res){
+    res.sendFile(__dirname+'/html/index.html');
+}),
+
+app.get("/cadastro",function(req,res){
+    res.render('formCadastro');
+}),
+
+app.post("/dadosCadastro", function(req, res){
+    CadastroUsuario.create({
+        id: null,
+        nome: req.body.nome,
+        email: req.body.email,
+        senha: req.body.senha,
+        createdAt: null,
+        updatedAt: null
+    }).then(function(){
+        res.redirect('/editarPerfil')
+    }).catch(function(erro){
+        res.send("houve um erro: " + erro)
+    })
 })
 
-app.use('/', router);
 
-app.listen(process.env.port || 3000);
+//app.use('/home', router);
 
-console.log("server on");
+app.listen(3000, function(){
+    console.log("servidor rodando na URL http://localhost:3000");
+});
