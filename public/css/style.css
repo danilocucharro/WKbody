@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
     text-decoration: none;
 }
 
@@ -11,11 +11,11 @@ body{
     font-size: 100%;
     background: #2C2A2A;
     font-family: 'Russo One', sans-serif;
+    max-width: 100%;
 }
 
 .cabecalho{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 20px 50px;
@@ -39,38 +39,44 @@ body{
 
 .conteudo{
     color:white;
+    max-width: 100%;
 }
 
 .conteudo1{
     display: flex;
-    flex-direction: row;
+  
     align-items: center;
     padding: 24px;
     justify-content: space-between;
     font-size: 50px;
+    max-width: 100%;
+    height: 230px;
+    margin-top: 10%;
 }
 
 .conteudo2{
     display: flex;
-    flex-direction: row;
+  
     align-items: center;
     padding: 24px;
     justify-content: space-between;
     font-size: 50px;
+    max-width: 100%;
+    height: 230px;
+    margin-top: 5%;
 }
 
 .conteudo3{
     display: flex;
-    flex-direction: row;
+   
     align-items: center;
-    flex-wrap: none;
-    transform: translate(-50%,-50%);
-    padding: 10px;
+    padding: 24px;
     justify-content: space-between;
-    font-size: 70px;
-    position: absolute;
-    left: 16%;
-    top: 100%;
+    font-size: 50px;
+    max-width: 100%;
+    height: 230px;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .menu-item:hover{
@@ -78,13 +84,9 @@ body{
 }
 
 .escrita{
-    padding-left: 20px;
-    position: absolute;
-    left: 53%;
-    top: 75%;
-    width: 50%;
+    margin-left: 65%;
+    max-width: 100%;
     font-size: 60px;
-    
 }
 
 .paragrafo1{
@@ -93,24 +95,21 @@ body{
     justify-content: space-around;
     position: absolute;
     height: 240px;
-    width: 1070px;
-    left: 35%;
-    top: 27%;
+    max-width: 60%;
     background: #4A4747;
     border-radius: 0px 50px;
     padding: 10px;
     font-size: 24px;
+    margin-left: 35%;
 }
 
 .paragrafo2{
-    display: flex;
+    display: inline;
     flex-direction: row;
     justify-content: space-around;
     position: absolute;
     height: 240px;
-    width: 800px;
-    left: 2%;
-    top: 70%;
+    max-width: 60%;
     background: #4A4747;
     border-radius: 0px 50px;
     padding: 10px;
@@ -122,16 +121,14 @@ body{
     flex-direction: row;
     justify-content: space-around;
     position: absolute;
-    height: 240px;
-    width: 1070px;
-    left: 1650%;
-    right: 80%;
-    top: 538%;
+    height: 270px;
+    max-width: 60%;
     background: #4A4747;
     border-radius: 0px 50px;
     padding: 10px;
     padding-bottom: 0px;
     font-size: 24px;
+    margin-left: 35%;
 }
 
 .mensagem{
@@ -139,8 +136,10 @@ body{
     flex-direction: row;
     justify-content: space-around;
     position: absolute;
-    left: -700%;
-    top: 650%;
+    font-size: 70px;
+    width: 10%;
+    margin-left: 10%;
+    margin-top: 0;
 }
 
 .conteudo-escrito{
@@ -148,10 +147,10 @@ body{
     flex-direction: row;
     justify-content: space-around;
     position: absolute;
-    top: 31%;
-    left: 13%;
     font-size: 70px;
     width: 10%;
+    margin-left: 10%;
+    margin-top: 0;
 }
 
 .botão{
@@ -160,13 +159,13 @@ body{
     border-radius: 10px;
     font-family: 'Russo One', sans-serif;
     color: #fff;
-    position: absolute;
-    left: 33%;
-    top: 90%;
     height: 50px;
-    width: 210px;
-    padding: none;
-    font-size: 40px;
+    width: 25%;
+    padding: 1%;
+    font-size: 35px;
+    margin-left: 75%;
+    margin-top: 90%;
+    display: inline;
 }
 
 .botão:hover{

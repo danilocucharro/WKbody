@@ -31,7 +31,7 @@ app.get('/editarPerfil', function(req, res){
 
 
 app.get("/",function(req,res){
-    res.sendFile(__dirname+'/html/index.html');
+    res.render('home');
 }),
 
 app.get("/cadastro",function(req,res){
