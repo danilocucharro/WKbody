@@ -38,6 +38,14 @@ app.get("/cadastro",function(req,res){
     res.render('formCadastro');
 }),
 
+app.get("/login",function(req,res){
+    res.render('formLogin');
+}),
+
+app.get("/exercicio",function(req,res){
+    res.render('exercicio')
+})
+
 app.post("/dadosCadastro", function(req, res){
     CadastroUsuario.create({
         id: null,
