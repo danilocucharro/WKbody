@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: #2C2A2A;
+    font-family: 'Russo One', sans-serif;
+    color:white;
+}
+
+h1{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.painelExercicios{
+    display: flex ;
+    max-width: 80%;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 5%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.exercicio{
+    width: 20%;
+    background-color: #4A4747;
+    margin-right: 5%;
+    border: none;
+    border-radius: 0px 50px;
+}

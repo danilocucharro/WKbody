@@ -29,7 +29,7 @@ app.get('/editarPerfil', function(req, res){
 }),
     
 
-
+// PAGINAS
 app.get("/",function(req,res){
     res.render('home');
 }),
@@ -44,6 +44,10 @@ app.get("/login",function(req,res){
 
 app.get("/exercicio",function(req,res){
     res.render('exercicio')
+})
+
+app.get("/listaDeExercicios",function(req,res){
+    res.render('listaDeExercicios')
 })
 
 app.post("/dadosCadastro", function(req, res){
