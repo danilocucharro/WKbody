@@ -54,6 +54,10 @@ app.get("/listaDeTreinos",function(req,res){
     res.render('listaDeTreinos')
 })
 
+app.get("/calculadoraTMB",function(req,res){
+    res.render('calculadoraTMB')
+})
+
 app.post("/dadosCadastro", function(req, res){
     CadastroUsuario.create({
         id: null,
