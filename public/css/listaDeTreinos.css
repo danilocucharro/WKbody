@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: #2C2A2A;
+    font-family: 'Russo One', sans-serif;
+    color:white;
+}
+
+h1{
+    text-align: center;
+    margin-top: 5%;
+}
+
+label{
+    font-size: 20px;
+}
+
+.listaDeTreinos{
+    display: flex;
+    width: 80%;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    height: auto;
+}
+
+.treino{
+    width: 20%;
+    background-color: black;
+    border: none;
+    border-radius: 0px 50px;
+    margin-right: 5%;
+}

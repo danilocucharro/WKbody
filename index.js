@@ -50,6 +50,10 @@ app.get("/listaDeExercicios",function(req,res){
     res.render('listaDeExercicios')
 })
 
+app.get("/listaDeTreinos",function(req,res){
+    res.render('listaDeTreinos')
+})
+
 app.post("/dadosCadastro", function(req, res){
     CadastroUsuario.create({
         id: null,
