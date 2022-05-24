@@ -64,3 +64,10 @@ h1{
     left: 30%;
     font-size: 27px;
 }
+
+.voltar{
+    position:absolute;
+    top: 30px;
+    left: 6%;
+    font-size: 27px;
+}

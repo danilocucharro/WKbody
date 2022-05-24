@@ -53,8 +53,9 @@ app.get("/login",function(req,res){
 }),
 
 app.get("/exercicio",function(req,res){
-    res.render('exercicio')
-})
+    res.render('exercicio');
+}),
+
 
 // PAGINAS PARA CADA TIPO DE TREINO
 
@@ -85,6 +86,14 @@ app.get("/exerciciosHiit",function(req,res){
         console.log(exerciciosHiit)
         res.render('exerciciosHiit', {exerciciosHiit: exerciciosHiit})
     })
+})
+
+//--------------------------------------------------------
+
+// EXERCICIO SELECIONADO
+
+app.get('/exercicio/:id', function(req, res){
+
 })
 
 //--------------------------------------------------------
