@@ -13,15 +13,16 @@
             <a class="menu-item" href="">SAIR</a>
         </nav>
     </header>
-
+    
     <h1>
         Cardio
     </h1>
 
     <section class="painelExercicios">
+        {{#each exerciciosCardio}}
         <div class="exercicio">
             <img src="" alt="">
-            <label for="">caminhada</label>
+            <label for="">{{nomeExercicio}}</label>
         </div>
-
+        {{/each}}
     </section>

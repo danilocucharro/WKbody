@@ -3,7 +3,11 @@ const app = express();
 const handlebars = require('express-handlebars')
 const bodyParser = require('body-parser')
 const CadastroUsuario = require('./models/CadastroUsuario')
-const path = require("path")
+const path = require("path");
+const TreinoCardio = require('./models/Cardio');
+const TreinoFuncional = require('./models/Funcional');
+const TreinoHiit = require('./models/Hiit');
+const TreinoMusculacao = require('./models/Musculacao');
 
 var handle = handlebars.create({defaultLayout: 'main'});
 
@@ -12,7 +16,13 @@ var handle = handlebars.create({defaultLayout: 'main'});
 
 // Config
     // Template engine
-        app.engine('handlebars', handle.engine);
+        app.engine('handlebars', handlebars.engine({ 
+            defaultLayout: 'main', 
+            runtimeOptions: {
+                allowProtoPropertiesByDefault: true,
+                allowProtoMethodsByDefault: true, 
+            },    
+        }))
         app.set('view engine', 'handlebars');
     // Body Parser
         app.use(express.urlencoded({extended: false}))
@@ -46,9 +56,38 @@ app.get("/exercicio",function(req,res){
     res.render('exercicio')
 })
 
-app.get("/listaDeExercicios",function(req,res){
-    res.render('listaDeExercicios')
+// PAGINAS PARA CADA TIPO DE TREINO
+
+
+app.get("/exerciciosCardio",function(req,res){
+    TreinoCardio.findAll().then(function(exerciciosCardio){
+        console.log(exerciciosCardio)
+        res.render('exerciciosCardio', {exerciciosCardio: exerciciosCardio})
+    })
 })
+
+app.get("/exerciciosMusculacao",function(req,res){
+    TreinoMusculacao.findAll().then(function(exerciciosMusculacao){
+        console.log(exerciciosMusculacao)
+        res.render('exerciciosMusculacao', {exerciciosMusculacao: exerciciosMusculacao})
+    })
+})
+
+app.get("/exerciciosFuncional",function(req,res){
+    TreinoFuncional.findAll().then(function(exerciciosFuncional){
+        console.log(exerciciosFuncional)
+        res.render('exerciciosFuncional', {exerciciosFuncional: exerciciosFuncional})
+    })
+})
+
+app.get("/exerciciosHiit",function(req,res){
+    TreinoHiit.findAll().then(function(exerciciosHiit){
+        console.log(exerciciosHiit)
+        res.render('exerciciosHiit', {exerciciosHiit: exerciciosHiit})
+    })
+})
+
+//--------------------------------------------------------
 
 app.get("/listaDeTreinos",function(req,res){
     res.render('listaDeTreinos')
