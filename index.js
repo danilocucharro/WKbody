@@ -52,8 +52,10 @@ app.get("/login",function(req,res){
     res.render('formLogin');
 }),
 
-app.get("/exercicio",function(req,res){
+app.get("/exercicio/:idExercicio",function(req,res){
+    TreinoCardio.findAll({where: {'idExercicio': req.params.idExercicio}})
     res.render('exercicio');
+    console.log(TreinoCardio);
 }),
 
 
