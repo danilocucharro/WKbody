@@ -37,3 +37,9 @@ h1{
     border: none;
     border-radius: 0px 50px;
 }
+
+.voltar{
+    font-size: 27px;
+    max-width: 30%;
+    color: white;
+}

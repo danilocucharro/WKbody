@@ -1,10 +1,10 @@
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/listaDeExercicios.css">
+    <link rel="stylesheet" href="/css/exercicio.css">
     <link rel="stylesheet" href="/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de exercícios</title>
+    <title>Exercício</title>
 </head>
 
     <header class="cabecalho">
@@ -16,18 +16,17 @@
         </nav>
     </header>
 
-    <a href="/listaDeTreinos" class="voltar">👈Voltar</a>
+    <a href="/exerciciosFuncional" class="voltar">👈Voltar</a>
 
+    {{#each exerciciosFuncional}}
     <h1>
-        Hiit
+        {{nomeExercicio}}
     </h1>
 
-    <section class="painelExercicios">
-        {{#each exerciciosHiit}}
-        <div class="exercicio">
-            <img src="" alt="">
-            <label for=""><a href="/exercicioDeHiit/{{idExercicio}}" style="color: white;">{{nomeExercicio}}</a></label>
+        <div class="infoExercicio">
+            <label for="" style="margin-top: 5%;">Resultados:</label>
+                <p style="margin-bottom: 5%; color:white;">{{resultados}}</p>
+            <label for="">Na Prática:</label>
+                <p>{{info}}</p>
         </div>
-        {{/each}}
-
-    </section>
+    {{/each}}

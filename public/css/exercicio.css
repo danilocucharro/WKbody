@@ -29,3 +29,9 @@ label{
     border: none;
     border-radius: 15px;
 }
+
+.voltar{
+    font-size: 27px;
+    max-width: 30%;
+    color: white;
+}

@@ -52,10 +52,31 @@ app.get("/login",function(req,res){
     res.render('formLogin');
 }),
 
-app.get("/exercicio/:idExercicio",function(req,res){
+app.get("/exercicioDeCardio/:idExercicio",function(req,res){
     TreinoCardio.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosCardio){
-        res.render('exercicio', {exerciciosCardio: exerciciosCardio});
+        res.render('exercicioDeCardio', {exerciciosCardio: exerciciosCardio});
         console.log(exerciciosCardio)
+    })
+}),
+
+app.get("/exercicioDeMusculacao/:idExercicio",function(req,res){
+    TreinoMusculacao.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosMusculacao){
+        res.render('exercicioDeMusculacao', {exerciciosMusculacao: exerciciosMusculacao});
+        console.log(exerciciosMusculacao)
+    })
+}),
+
+app.get("/exercicioDeFuncional/:idExercicio",function(req,res){
+    TreinoFuncional.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosFuncional){
+        res.render('exercicioDeFuncional', {exerciciosFuncional: exerciciosFuncional});
+        console.log(exerciciosFuncional)
+    })
+}),
+
+app.get("/exercicioDeHiit/:idExercicio",function(req,res){
+    TreinoHiit.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosHiit){
+        res.render('exercicioDeHiit', {exerciciosHiit: exerciciosHiit});
+        console.log(exerciciosHiit)
     })
 }),
 
@@ -95,9 +116,7 @@ app.get("/exerciciosHiit",function(req,res){
 
 // EXERCICIO SELECIONADO
 
-app.get('/exercicio/:id', function(req, res){
 
-})
 
 //--------------------------------------------------------
 

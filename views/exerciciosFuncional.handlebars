@@ -8,11 +8,15 @@
 </head>
 
     <header class="cabecalho">
-        <img class="cabecalho-logo" src="../images/logo.png">
+        <a href="/">
+            <img class="cabecalho-logo" src="../images/logo.png">
+        </a>
         <nav class="menu">
             <a class="menu-item" href="">SAIR</a>
         </nav>
     </header>
+
+    <a href="/listaDeTreinos" class="voltar">👈Voltar</a>
 
     <h1>
         Funcional
@@ -22,7 +26,7 @@
         {{#each exerciciosFuncional}}
         <div class="exercicio">
             <img src="" alt="">
-            <label for=""><a href="/exercicio" style="color: white;">{{nomeExercicio}}</a></label>
+            <label for=""><a href="/exercicioDeFuncional/{{idExercicio}}" style="color: white;">{{nomeExercicio}}</a></label>
         </div>
         {{/each}}
 
