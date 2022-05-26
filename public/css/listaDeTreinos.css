@@ -39,3 +39,15 @@ label{
     border-radius: 0px 50px;
     margin-right: 5%;
 }
+
+.nomeDoTreino{
+    text-align: center;
+}
+
+a{
+    color: white;
+}
+
+label:hover{
+    cursor: pointer;
+}

@@ -14,11 +14,11 @@
         </nav>
     </header>
 
+    {{#each exerciciosCardio}}
     <h1>
-        Abdominal
+        {{nomeExercicio}}
     </h1>
 
-    {{#each exerciciosCardio}}
         <div class="infoExercicio">
             <label for="" style="margin-top: 5%;">Resultados:</label>
                 <p style="margin-bottom: 5%; color:white;">{{resultados}}</p>
