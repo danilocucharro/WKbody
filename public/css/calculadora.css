@@ -31,6 +31,14 @@ input{
     margin-bottom: 5%;
 }
 
+select{
+    height: 50px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
 .calculadora{
     margin-top: 5%;
     background-color: #4A4747;
@@ -40,6 +48,7 @@ input{
     margin-left: 30%;
     padding: 2%;
     height: auto;
+    margin-bottom: 5%;
 }
 
 .buttonCalcular{

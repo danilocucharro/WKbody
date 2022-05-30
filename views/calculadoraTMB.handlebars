@@ -8,28 +8,36 @@
 </head>
 
     <header class="cabecalho">
-        <img class="cabecalho-logo" src="../images/logo.png">
+        <a href="/">
+            <img class="cabecalho-logo" src="../images/logo.png">
+        </a>
         <nav class="menu">
-            <a class="menu-item" href="">SAIR</a>
         </nav>
     </header>
 
     <h1>
-        CALCULADORA DE TMB
+        CALCULE SUA TAXA METABÓLICA BASAL
     </h1>
 
     <div class="calculadora">
         <form action="">
-            <div style="float: right;">
+            <div style="text-align:center">
+                <label for="">Sexo</label>
+                <select id="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+            </div>
+            <div style="text-align:center">
                 <label for="">Peso</label>
                 <input type="text" placeholder="Kg">
             </div>
-            <div style="float: right;">
+            <div style="text-align:center">
                 <label for="">Idade</label>
-                <input type="text">
+                <input type="text" placeholder="Anos">
             </div>
-            <div style="float: right;">
-                <label for="">Altura (cm)</label>
+            <div style="text-align:center">
+                <label for="">Altura</label>
                 <input type="text" placeholder="Altura(CM)">
             </div>
 

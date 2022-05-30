@@ -27,62 +27,25 @@ var handle = handlebars.create({defaultLayout: 'main'});
     // Body Parser
         app.use(express.urlencoded({extended: false}))
         app.use(express.json())
-
-// Rotas
-app.get('/editarPerfil', function(req, res){
-    res.render('editarPerfil')/*
-    CadastroUsuario.findOne({where: {'id': req.params.id}}).then(function(){
-        res.send(req.body.nome)
-    }).catch(function(erro){
-        res.send("algo de errado")
-    })*/
-}),
     
+//--------------------------------------------------------
 
-// PAGINAS
+// PAGINAS ESTATICAS
 app.get("/",function(req,res){
     res.render('home');
 }),
 
-app.get("/cadastro",function(req,res){
-    res.render('formCadastro');
+app.get("/calculadoraTMB",function(req,res){
+    res.render('calculadoraTMB')
 }),
 
-app.get("/login",function(req,res){
-    res.render('formLogin');
-}),
+app.get("/listaDeTreinos",function(req,res){
+    res.render('listaDeTreinos')
+})
 
-app.get("/exercicioDeCardio/:idExercicio",function(req,res){
-    TreinoCardio.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosCardio){
-        res.render('exercicioDeCardio', {exerciciosCardio: exerciciosCardio});
-        console.log(exerciciosCardio)
-    })
-}),
-
-app.get("/exercicioDeMusculacao/:idExercicio",function(req,res){
-    TreinoMusculacao.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosMusculacao){
-        res.render('exercicioDeMusculacao', {exerciciosMusculacao: exerciciosMusculacao});
-        console.log(exerciciosMusculacao)
-    })
-}),
-
-app.get("/exercicioDeFuncional/:idExercicio",function(req,res){
-    TreinoFuncional.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosFuncional){
-        res.render('exercicioDeFuncional', {exerciciosFuncional: exerciciosFuncional});
-        console.log(exerciciosFuncional)
-    })
-}),
-
-app.get("/exercicioDeHiit/:idExercicio",function(req,res){
-    TreinoHiit.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosHiit){
-        res.render('exercicioDeHiit', {exerciciosHiit: exerciciosHiit});
-        console.log(exerciciosHiit)
-    })
-}),
-
+//--------------------------------------------------------
 
 // PAGINAS PARA CADA TIPO DE TREINO
-
 
 app.get("/exerciciosCardio",function(req,res){
     TreinoCardio.findAll().then(function(exerciciosCardio){
@@ -116,18 +79,37 @@ app.get("/exerciciosHiit",function(req,res){
 
 // EXERCICIO SELECIONADO
 
+app.get("/exercicioDeCardio/:idExercicio",function(req,res){
+    TreinoCardio.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosCardio){
+        res.render('exercicioDeCardio', {exerciciosCardio: exerciciosCardio});
+        console.log(exerciciosCardio)
+    })
+}),
 
+app.get("/exercicioDeMusculacao/:idExercicio",function(req,res){
+    TreinoMusculacao.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosMusculacao){
+        res.render('exercicioDeMusculacao', {exerciciosMusculacao: exerciciosMusculacao});
+        console.log(exerciciosMusculacao)
+    })
+}),
+
+app.get("/exercicioDeFuncional/:idExercicio",function(req,res){
+    TreinoFuncional.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosFuncional){
+        res.render('exercicioDeFuncional', {exerciciosFuncional: exerciciosFuncional});
+        console.log(exerciciosFuncional)
+    })
+}),
+
+app.get("/exercicioDeHiit/:idExercicio",function(req,res){
+    TreinoHiit.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosHiit){
+        res.render('exercicioDeHiit', {exerciciosHiit: exerciciosHiit});
+        console.log(exerciciosHiit)
+    })
+}),
 
 //--------------------------------------------------------
 
-app.get("/listaDeTreinos",function(req,res){
-    res.render('listaDeTreinos')
-})
-
-app.get("/calculadoraTMB",function(req,res){
-    res.render('calculadoraTMB')
-})
-
+/*
 app.post("/dadosCadastro", function(req, res){
     CadastroUsuario.create({
         id: null,
@@ -141,10 +123,8 @@ app.post("/dadosCadastro", function(req, res){
     }).catch(function(erro){
         res.send("houve um erro: " + erro)
     })
-})
+})*/
 
-
-//app.use('/home', router);
 
 app.listen(3000, function(){
     console.log("servidor rodando na URL http://localhost:3000");
