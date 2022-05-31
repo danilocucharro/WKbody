@@ -45,6 +45,15 @@ app.get("/listaDeTreinos",function(req,res){
 
 //--------------------------------------------------------
 
+// CALCULADORA
+
+app.post("/dadosCalculadora", function(req, res){
+    req.body.peso
+    res.render()
+})
+
+//--------------------------------------------------------
+
 // PAGINAS PARA CADA TIPO DE TREINO
 
 app.get("/exerciciosCardio",function(req,res){

@@ -39,6 +39,14 @@ select{
     margin-bottom: 5%;
 }
 
+#resultadoTmb{
+    font-size: 24px;
+    margin-bottom: 2%;
+    float: right;
+    max-width: auto;
+    margin-right:30%;
+}
+
 .calculadora{
     margin-top: 5%;
     background-color: #4A4747;

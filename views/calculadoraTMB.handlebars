@@ -20,7 +20,7 @@
     </h1>
 
     <div class="calculadora">
-        <form action="">
+        <form id="form" action="" method="">
             <div style="text-align:center">
                 <label for="">Sexo</label>
                 <select id="sexo">
@@ -30,17 +30,52 @@
             </div>
             <div style="text-align:center">
                 <label for="">Peso</label>
-                <input type="text" placeholder="Kg">
+                <input id="peso" type="text" placeholder="Kg">
             </div>
             <div style="text-align:center">
                 <label for="">Idade</label>
-                <input type="text" placeholder="Anos">
+                <input id="idade" type="text" placeholder="Anos">
             </div>
             <div style="text-align:center">
                 <label for="">Altura</label>
-                <input type="text" placeholder="Altura(CM)">
+                <input id="altura" type="text" placeholder="Altura(CM)">
             </div>
-
-            <input class="buttonCalcular" type="submit" value="Calcular">
+            <div style="">
+                <label for="" style="margin-left: 30%">TMB = </label>
+                <p id="resultadoTmb"></p>
+            </div>
+            <input class="buttonCalcular" id="dadosCalc" type="submit" value="Calcular">
         </form>
     </div>
+
+    <script>
+        const btn = document.querySelector("#dadosCalc");
+
+btn.addEventListener("click", function(e) {
+
+    e.preventDefault();
+
+    const getSexo = document.querySelector("#sexo")
+    const getPeso = document.querySelector("#peso")
+    const getIdade = document.querySelector("#idade")
+    const getAltura = document.querySelector("#altura")
+
+    const sexo = getSexo.value;
+    const peso = getPeso.value;
+    const idade = getIdade.value;
+    const altura = getAltura.value;
+
+    var tmb;
+
+    if(getSexo.value == "masculino"){
+
+        tmb = (66 + (13.7 * peso)) + ((5 * altura) - (6.8 * idade))
+    
+    }else{
+        tmb = (655 + (9.6 * peso)) + ((1.8 * altura) - (4.7 * idade))
+    }
+
+    document.getElementById("resultadoTmb").innerHTML = tmb
+
+});
+    </script>
