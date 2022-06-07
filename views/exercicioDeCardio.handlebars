@@ -1,11 +1,12 @@
-{{#each exerciciosCardio}}
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/exercicio.css">
     <link rel="stylesheet" href="/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{#each exerciciosCardio}}
     <title>{{nomeExercicio}}</title>
+    {{/each}}
 </head>
 
     <header class="cabecalho">
@@ -18,14 +19,16 @@
 
     <a href="/exerciciosCardio" class="voltar">👈Voltar</a>
 
+    {{#each exerciciosCardio}}
     <h1>
         {{nomeExercicio}}
     </h1>
 
         <div class="infoExercicio">
-            <label for="" style="margin-top: 5%;">Resultados:</label>
+                <img src="{{fotoExercicio}}" alt="" width="100%" height="300"/>
+            <label for="" style="margin-top: 5%; margin-bottom: 5%">Resultados:</label>
                 <p style="margin-bottom: 5%; color:white;">{{resultados}}</p>
-            <label for="">Na Prática:</label>
+            <label for="" style="margin-top: 5%; margin-bottom: 5%">Na Prática:</label>
                 <p>{{info}}</p>
         </div>
     {{/each}}

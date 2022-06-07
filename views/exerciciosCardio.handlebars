@@ -24,8 +24,17 @@
     <section class="painelExercicios">
         {{#each exerciciosCardio}}
         <div class="exercicio">
-            <img src="" alt="">
-            <label for=""><a href="/exercicioDeCardio/{{idExercicio}}" style="color: white;">{{nomeExercicio}}</a></label>
+            <a href="/exercicioDeCardio/{{idExercicio}}">
+                <img class="imgExercicio" src="images/cardio.png" alt="" width="100%" height="80%">
+            </a>
+            
+            <div class="labelExercicio">
+                <label for="">
+                <a href="/exercicioDeCardio/{{idExercicio}}" style="color: white;">
+                {{nomeExercicio}}
+                </a>
+            </label>
+            </div>
         </div>
         {{/each}}
     </section>

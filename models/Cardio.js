@@ -18,6 +18,10 @@ const TreinoCardio = db.sequelize.define('cardios', {
     info: {
         type: db.Sequelize.STRING
     },
+
+    fotoExercicio: {
+        type: db.Sequelize.BLOB
+    }
 })
 
 

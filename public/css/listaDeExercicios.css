@@ -21,25 +21,34 @@ h1{
 
 .painelExercicios{
     display: flex ;
-    max-width: 80%;
+    max-width: 90%;
     background-color: black;
     border: none;
     border-radius: 15px;
     padding: 5%;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 5%;
 }
 
 .exercicio{
     width: 20%;
+    height: 150px;
     background-color: #4A4747;
-    margin-right: 5%;
+    margin-right: 2%;
     border: none;
-    border-radius: 0px 50px;
+    border-radius: 0px 30px 0px 30px;
 }
 
 .voltar{
     font-size: 27px;
     max-width: 30%;
     color: white;
+}
+
+.imgExercicio{
+    border-radius: 0px 30px 0px 0px;
+}
+
+.labelExercicio{
+    text-align: center;
 }

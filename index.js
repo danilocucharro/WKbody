@@ -58,28 +58,24 @@ app.post("/dadosCalculadora", function(req, res){
 
 app.get("/exerciciosCardio",function(req,res){
     TreinoCardio.findAll().then(function(exerciciosCardio){
-        console.log(exerciciosCardio)
         res.render('exerciciosCardio', {exerciciosCardio: exerciciosCardio})
     })
 })
 
 app.get("/exerciciosMusculacao",function(req,res){
     TreinoMusculacao.findAll().then(function(exerciciosMusculacao){
-        console.log(exerciciosMusculacao)
         res.render('exerciciosMusculacao', {exerciciosMusculacao: exerciciosMusculacao})
     })
 })
 
 app.get("/exerciciosFuncional",function(req,res){
     TreinoFuncional.findAll().then(function(exerciciosFuncional){
-        console.log(exerciciosFuncional)
         res.render('exerciciosFuncional', {exerciciosFuncional: exerciciosFuncional})
     })
 })
 
 app.get("/exerciciosHiit",function(req,res){
     TreinoHiit.findAll().then(function(exerciciosHiit){
-        console.log(exerciciosHiit)
         res.render('exerciciosHiit', {exerciciosHiit: exerciciosHiit})
     })
 })
@@ -91,28 +87,24 @@ app.get("/exerciciosHiit",function(req,res){
 app.get("/exercicioDeCardio/:idExercicio",function(req,res){
     TreinoCardio.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosCardio){
         res.render('exercicioDeCardio', {exerciciosCardio: exerciciosCardio});
-        console.log(exerciciosCardio)
     })
 }),
 
 app.get("/exercicioDeMusculacao/:idExercicio",function(req,res){
     TreinoMusculacao.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosMusculacao){
         res.render('exercicioDeMusculacao', {exerciciosMusculacao: exerciciosMusculacao});
-        console.log(exerciciosMusculacao)
     })
 }),
 
 app.get("/exercicioDeFuncional/:idExercicio",function(req,res){
     TreinoFuncional.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosFuncional){
         res.render('exercicioDeFuncional', {exerciciosFuncional: exerciciosFuncional});
-        console.log(exerciciosFuncional)
     })
 }),
 
 app.get("/exercicioDeHiit/:idExercicio",function(req,res){
     TreinoHiit.findAll({where: {'idExercicio': req.params.idExercicio}}).then(function(exerciciosHiit){
         res.render('exercicioDeHiit', {exerciciosHiit: exerciciosHiit});
-        console.log(exerciciosHiit)
     })
 }),
 

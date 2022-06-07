@@ -36,8 +36,13 @@ label{
     width: 20%;
     background-color: black;
     border: none;
-    border-radius: 0px 50px;
+    border-radius: 0px 30px;
     margin-right: 5%;
+}
+
+.imgTreino{
+    border: none;
+    border-radius: 0px 30px 0px 0px;
 }
 
 .nomeDoTreino{

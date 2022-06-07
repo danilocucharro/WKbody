@@ -18,6 +18,10 @@ const TreinoMusculacao = db.sequelize.define('musculacaos', {
     info: {
         type: db.Sequelize.STRING
     },
+
+    fotoExercicio: {
+        type: db.Sequelize.STRING
+    }
 })
 
 
